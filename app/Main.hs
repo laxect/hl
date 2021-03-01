@@ -1,9 +1,15 @@
 module Main where
 
 import Day1
+import Day2
 
 main :: IO ()
 
-day1 = "Day1!\n" ++ showTri (fst (tri' !! 100)) ++ "\n"
+day1 = "Day1!\n\n" ++ showTri (fst (tri' !! 100))
 
-main = putStrLn (day1 ++ "end")
+main = do
+  putStrLn day1
+  putStrLn "\n==="
+  day2
+  putStrLn "\n==="
+  putStrLn "end"
